@@ -34,13 +34,15 @@ class Archer extends Karakter implements Skill {
     
     @Override
     public void skillUtama(){
-        System.out.println(nama + " menggunakan skill 'Fokus'!");
         Accuracy += 0.15f;
+        System.out.println(nama + " menggunakan skill 'Fokus', akurasi " + nama + " meningkat");
     }
     
     @Override
     public void skillUltimate(){
         System.out.println(nama + " menggunakan skill ultimate 'Pluie de flèche!'");
+        Accuracy -= 0.20f;
+        System.out.println("Akurasi " + nama + " berkurang karena menggunakan skill Ultimate!");
     }
     
     @Override
