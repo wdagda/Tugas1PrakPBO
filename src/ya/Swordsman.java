@@ -8,7 +8,7 @@ package ya;
  *
  * @author zatri
  */
-class Swordsman extends Karakter implements Skill {
+class Swordsman extends Karakter implements bisamenggunakanSkill {
     public Swordsman(String inama, int ilevel, int ihp){
         super(inama, ilevel, ihp);
     }
@@ -29,12 +29,12 @@ class Swordsman extends Karakter implements Skill {
     }
     
     @Override
-    public void skillUtama(){
+    public void gunakanskillUtama(){
         System.out.println(nama + " menggunakan skill 'Seruan perang!'");
     }
     
     @Override
-    public void skillUltimate(){
+    public void gunakanskillUltimate(){
         System.out.println(nama + " menggunakan skill ultimate 'Pemecah Langit!'");
     }
     

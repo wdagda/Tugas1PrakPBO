@@ -9,7 +9,7 @@ package ya;
  * @author zatri
  */
 
-class Archer extends Karakter implements Skill {
+class Archer extends Karakter implements bisamenggunakanSkill {
     float Accuracy;
     
     public Archer(String inama, int ilevel, int ihp, float iAccuracy){
@@ -33,13 +33,13 @@ class Archer extends Karakter implements Skill {
     }
     
     @Override
-    public void skillUtama(){
+    public void gunakanskillUtama(){
         Accuracy += 0.15f;
         System.out.println(nama + " menggunakan skill 'Fokus', akurasi " + nama + " meningkat");
     }
     
     @Override
-    public void skillUltimate(){
+    public void gunakanskillUltimate(){
         System.out.println(nama + " menggunakan skill ultimate 'Pluie de flèche!'");
         Accuracy -= 0.20f;
         System.out.println("Akurasi " + nama + " berkurang karena menggunakan skill Ultimate!");

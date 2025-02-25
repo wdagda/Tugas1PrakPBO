@@ -9,7 +9,7 @@ package ya;
  * @author zatri
  */
 
-class Mage extends Karakter implements Skill {
+class Mage extends Karakter implements bisamenggunakanSkill {
     private int mana;
     
     
@@ -44,7 +44,7 @@ class Mage extends Karakter implements Skill {
     }
     
     @Override
-    public void skillUtama(){
+    public void gunakanskillUtama(){
         if (mana >= 20) {
             System.out.println(nama + " menggunakan mantra 'Ledakan'!");
             mana -= 20;
@@ -54,7 +54,7 @@ class Mage extends Karakter implements Skill {
     }
     
     @Override
-    public void skillUltimate(){
+    public void gunakanskillUltimate(){
         if (mana >= 30) {
             System.out.println(nama + " menggunakan mantra 'détruit'!");
             mana -= 30;
@@ -63,7 +63,7 @@ class Mage extends Karakter implements Skill {
         }
     }
     
-    public void isiMana(){
+    public void mengisiMana(){
         mana += 15;
         System.out.println(nama + " memulihkan mana sebanyak +15, mana sekarang : " + this.mana);
         

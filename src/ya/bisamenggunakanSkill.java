@@ -8,7 +8,7 @@ package ya;
  *
  * @author zatri
  */
-public interface Skill {
-        void skillUtama();
-        void skillUltimate();
+public interface bisamenggunakanSkill {
+        void gunakanskillUtama();
+        void gunakanskillUltimate();
 }
